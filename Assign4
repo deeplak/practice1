@@ -1,0 +1,38 @@
+Describe what happens if, in HelloWorld.java, you omit
+main       - missing Identifiers
+String     - missing Identifiers
+HelloWorld - missing Identifiers
+System.out - missing Symbol
+println    - missing Identifiers
+
+Describe what happens if, in HelloWorld.java, you omit
+the ;         - Syntax error ; expected
+the first "   -  ) expected 
+the second "  -  unclosed String literal
+the first {   - { expected
+the second {  - ; expected
+the first }   - reached end of file while parsing
+the second }  - reached end of file while parsing
+
+Describe what happens if, in HelloWorld.java, you misspell (by, say, omitting the second letter)
+main    - main method not found
+String  - cannot find symbol
+HelloWorld -class HeloWorld is public, should be declared in a file named HeloWorld.java
+System.out - package Sysem does not exist
+println    -cannot find symbol
+            symbol:   method pritln(java.lang.String)
+            location: variable out of type java.io.PrintStream  
+            
+
+I typed in the following program. It compiles fine, but when I execute it, I get the error java.lang.NoSuchMethodError: main. What am I doing wrong?
+public class Hello {
+   public static void main() {
+      System.out.println("Doesn't execute");   
+   }
+}
+Answer: you forgot the String[] args. It is required.
+
+Error reported - Main method not found in class Hello, please define the main method as:
+                 public static void main(String[] args)
+                 or a JavaFX application class must extend javafx.application.Application
+
