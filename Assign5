@@ -1,0 +1,20 @@
+ checked Exceptions :
+
+SQLException
+IOException
+ClassNotFoundException
+InvocationTargetException
+FileNotfound Exception
+
+Unchecked Exceptions:
+
+ArithmeticException
+NullPointerException
+ArrayIndexOutOfBoundsException
+NumberFormatException
+InputMismatchException
+IllegalStateException
+Missing Resource Exception
+No Such Element Exception
+Undeclared Throwable Exception
+Empty Stack Exception
