@@ -1,0 +1,23 @@
+// Reversing a Given String
+
+import java.util.*;  // Import the Scanner class
+
+public class Assign4 {
+
+        public static void main(String[] args) {
+            Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+            Assign4 rev= new Assign4();
+            String gvnStr;
+            System.out.println("Enter a String to Reverse : ");
+            gvnStr = myObj.nextLine();
+            System.out.print("Reversed String is : " + rev.Reverse(gvnStr));
+        }
+        static String Reverse(String s){
+        String rev="";
+        for(int i=s.length();i>0;i--)
+        {
+            rev=rev+(s.charAt(i-1));
+        }
+        return rev;
+    }
+}
