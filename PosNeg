@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class ChkNum {
+    public static void main(String[] args) {
+        System.out.println("Enter a Integer :");
+        Scanner ip= new Scanner(System.in);
+        int x=ip.nextInt();
+        if (x <0 )
+            System.out.println(" The given Number "+x+" is NEGATIVE");
+        else
+        {
+            if (x==0)
+                System.out.println("The given Number is ZERO");
+            else
+                 System.out.println(" The given Number "+x+ "is POSITIVE");
+        }
+
+    }
+
+}
