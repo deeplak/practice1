@@ -1,0 +1,33 @@
+// Watson-Crick Complement
+import java.util.Scanner;
+
+public class Assign7 {
+    public static void main(String[] args) {
+        Assign7 conv= new Assign7();
+        Scanner ip= new Scanner(System.in);
+        System.out.println("Enter DNA code :");
+        String dnacode=ip.next();
+        if (isValidDNA(dnacode)== true)
+            System.out.println("The Watson-Crik complement code is : " + conv.compWatsonCrick(dnacode));
+        else
+            System.out.println("The given code is not valid DNA code");
+    }
+    public static String compWatsonCrick(String s) {
+        s = s.replaceAll("A", "t");
+        s = s.replaceAll("T", "a");
+        s = s.replaceAll("C", "g");
+        s = s.replaceAll("G", "c");
+        return s.toUpperCase();
+
+    }
+    static boolean isValidDNA(String s) {
+
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c != 'A' && c != 'T' && c != 'C' && c != 'G')
+                return false;
+
+        }
+        return true;
+    }
+}
